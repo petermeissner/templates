@@ -1,0 +1,83 @@
+\documentclass[10pt,a4paper, sans]{moderncv}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage[english, ngerman]{babel}
+\usepackage[top=2cm, bottom=3cm]{geometry}
+\usepackage{marginnote}
+\usepackage{lastpage}
+
+\rfoot{\addressfont\itshape\textcolor{gray}{\thepage\ / \pageref{LastPage}}}
+
+% breaking urls 
+\makeatletter
+\g@addto@macro{\UrlBreaks}{\UrlOrds}
+\makeatother
+
+\moderncvtheme[black]{classic}
+\firstname{\mbox{First Lastname}} 
+\familyname{} 
+\title{CV} 
+\address{
+Firstname Lastname\\
+Street\\
+Zipcode\\
+\\
+} %
+\mobile{+01 100 001 01 01 10} 
+\phone{+11 001 10 001 11} 
+\email{mail@mailman.mail} 
+\photo[75pt]{dummy.png}  
+
+
+% individual stuff
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
+\begin{document} 
+\maketitle 
+\vspace{-1em}
+\hrulefill
+\vspace{1em}
+
+\setlength{\parskip}{1em plus3em minus0.5em}
+
+
+\marginparsep=-2.5cm
+\marginparwidth=2.5cm
+\reversemarginpar
+
+\section{Text Stuff}
+
+\begin{changemargin}{3cm}{0cm} 
+This is some text explaining stuff and showing how text might look like in the template cpompared to cventries. This is some text explaining stuff and showing how text might look like in the template cpompared to cventries. This is some text explaining stuff and showing how text might look like in the template cpompared to cventries.  
+
+This is some text explaining stuff and showing how text might look like in the template cpompared to cventries. 
+
+This is some text explaining stuff and showing how text might look like in the template cpompared to cventries. This is some text explaining stuff and showing how text might look like in the template cpompared to cventries. This is some text explaining stuff and showing how text might look like in the template cpompared to cventries. 
+
+\end{changemargin}
+
+
+\section{CV Entries}
+
+\cventry{2011 -- 2016}{Awsome Project - really superdupercool}{italics please - a lot of stuff to do, really a lot - ppuh ... dummdidumm}{not italics anymore - a lot of stuff to do, really a lot - ppuh}{a lot of stuff to do, really a lot - ppuh ... dummdidumm}{on a newline pleasea lot of stuff to do, really a lot - ppuh ... dummdidumm}
+
+\cventry{2011 -- 2016}{Awsome Project - really superdupercool}{\newline italics please - a lot of stuff to do, really a lot - ppuh ... dummdidumm}{}{}{}
+
+\cventry{2011 -- 2016}{Awsome Project - really superdupercool}{\newline italics please - a lot of stuff to do, really a lot - ppuh ... dummdidumm}{}{}{}
+
+\cventry{2011 -- 2016}{Awsome Project - really superdupercool}{\newline italics please - a lot of stuff to do, really a lot - ppuh ... dummdidumm}{}{}{}
+
+\cventry{2011 -- 2016}{Awsome Project - really superdupercool}{italics please - a lot of stuff to do, really a lot - ppuh ... dummdidumm}{not italics anymore - a lot of stuff to do, really a lot - ppuh}{a lot of stuff to do, really a lot - ppuh ... dummdidumm}{on a newline pleasea lot of stuff to do, really a lot - ppuh ... dummdidumm}
+
+\cventry{2011 -- 2016}{Awsome Project - really superdupercool}{italics please - a lot of stuff to do, really a lot - ppuh ... dummdidumm}{not italics anymore - a lot of stuff to do, really a lot - ppuh}{a lot of stuff to do, really a lot - ppuh ... dummdidumm}{on a newline pleasea lot of stuff to do, really a lot - ppuh ... dummdidumm}
+
+\cventry{2011 -- 2016}{Awsome Project - really superdupercool}{\newline italics please - a lot of stuff to do, really a lot - ppuh ... dummdidumm}{}{}{}
+
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
